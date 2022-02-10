@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/main.js" defer type="module"></script>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div id="nav">
+            <div id="title">
+                Snake
+            </div>
+            <div id="settings" onclick="showMenu()"></div>
+        </div>
+        <div id="menu">
+            
+           <!---TODO for menu---->
+           <div id="middle">
+               <div>
+                    Speed Level:
+                    <select id="speed_option_selector">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select> 
+                </div>
+                <div>
+                    <div>
+                        Obstacle Map:
+                        <select id="obstacle_map_selector">
+                            <option value="no_obstacle" selected>No Obstacle</option>
+                            <option value="horizontal">Horizontal</option>
+                            <option value="vertical">Vertical</option>
+                            <option value="corner">Corner</option>
+                            <option value="horizontal_tunnel">Horizontal Tunnel</option>
+                            <option value="vertical_tunnel">Vertical Tunnel</option>
+                            <option value="box">Box</option>
+                            <option value="dblHorizontal">Double Horizontal</option>
+                            <option value="dblVertical">Double Vertical</option>
+                            <option value="dblCorner">Double Corner</option>
+                            <option value="CM28">CM28</option>
+                            <option value="plus">Plus</option>
+                            <option value="dblPlus">Double Plus</option>
+                            <option value="cornerPlus">Corner Plus</option>
+                            <option value="cornerPlusDot">Corner Plus Dot</option>
+                            <option value="CM32">CM32</option>
+                            <option value="curveCorner">Curve Coner</option>
+                            <option value="curveCorner2">Curve Coner 2</option>
+                            <option value="sideY">Side Y</option>
+                        </select>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="bottom">
+
+                <a href="about.html">About</a>
+                
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="main">
+            <div id="upper">
+                <span>Score: </span>
+                <span id="game_score">0</span>
+            </div>
+            <div id="middle">
+                <div id="board"></div>
+                <div id="lower">
+                    Puddu Wins
+                </div>
+            </div>
+            <div id="lower_fixed">
+                <div id="play_btn">Play</div>
+            </div>
+            <div id="lower_fixed">
+                <div id="restart_btn">Restart</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="company">Riverslide</div>
+        <div id="year">2022</div>
+    </footer>
+    
+</body>
+</html>
